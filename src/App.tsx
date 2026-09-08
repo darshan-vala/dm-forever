@@ -2,7 +2,6 @@ import React from 'react';
 import { ToastProvider } from './components/ui/Toast';
 import { FloatingNav } from './components/ui/FloatingNav';
 import { FloatingAudio } from './components/ui/FloatingAudio';
-import { PetalParticles } from './components/ui/PetalParticles';
 import { Hero } from './sections/Hero';
 import { Countdown } from './sections/Countdown';
 import { Celebrations } from './sections/Celebrations';
@@ -15,9 +14,6 @@ export const App: React.FC = () => {
   return (
     <ToastProvider>
       <div className="relative min-h-screen bg-ivory-100 text-charcoal-800 font-sans selection:bg-burgundy-600 selection:text-ivory-50 overflow-x-hidden">
-        {/* Subtle Ambient Golden Petal & Sparkle Particles */}
-        <PetalParticles />
-
         {/* Floating Minimal Luxury Navigation */}
         <FloatingNav />
 
