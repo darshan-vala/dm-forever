@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { ToastProvider } from './components/ui/Toast';
 import { FloatingNav } from './components/ui/FloatingNav';
 import { FloatingAudio } from './components/ui/FloatingAudio';
@@ -43,6 +44,9 @@ export const App: React.FC = () => {
 
         {/* AND SO, OUR FOREVER BEGINS */}
         <ForeverFooter />
+
+        {/* Vercel Analytics - Track visitors & page views */}
+        <Analytics />
       </div>
     </ToastProvider>
   );
