@@ -68,7 +68,7 @@ export const weddingConfig: WeddingConfig = {
       day: '25 Nov',
       dayNumber: 1,
       period: 'Morning',
-      person: 'Darshan',
+      person: "Darshan's Family Side",
       subtitle: 'Auspicious Rituals & Mandap Blessing',
       description: 'An auspicious beginning as we prepare the mandap for the celebrations that follow.',
       theme: 'sacred-gold',
@@ -108,7 +108,7 @@ export const weddingConfig: WeddingConfig = {
       day: '26 Nov',
       dayNumber: 2,
       period: 'Morning',
-      person: 'Mansi',
+      person: "Mansi's Family Side",
       subtitle: 'Sacred Peace, Chants & Blessings',
       description: 'An auspicious ceremony filled with blessings, peace and good wishes for the journey ahead.',
       theme: 'serene-blessings',
@@ -117,13 +117,13 @@ export const weddingConfig: WeddingConfig = {
     },
     {
       id: 'the-wedding',
-      name: 'The Wedding',
+      name: 'Vivah Sanskar',
       date: '26 November 2026',
       day: '26 Nov',
       dayNumber: 2,
       period: 'Evening',
       subtitle: 'The Sacred Pheras & Royal Union',
-      description: "And finally, the moment we've been waiting for. Two families. Two journeys. One forever.",
+      description: 'The sacred pheras around the holy fire, uniting two souls and two families in love, cherished vows, and lifelong togetherness.',
       theme: 'royal-climax',
       image: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1200&auto=format&fit=crop',
       iconName: 'HeartHandshake',
@@ -212,9 +212,9 @@ export const weddingConfig: WeddingConfig = {
     heading: 'With the Blessings of Our Families',
     subheading: 'Their unconditional love, wisdom, and blessings have shaped our lives and brought us together.',
     mansiFamilyTitle: "MANSI'S FAMILY",
-    mansiFamilyMembers: ['[Names to be added]'],
+    mansiFamilyMembers: ["Smitaben and Kalpeshbhai Khalasi's daughter"],
     darshanFamilyTitle: "DARSHAN'S FAMILY",
-    darshanFamilyMembers: ['[Names to be added]'],
+    darshanFamilyMembers: ["Arunaben and Rameshbhai Vala's son"],
   },
 
   rsvp: {
@@ -226,7 +226,7 @@ export const weddingConfig: WeddingConfig = {
       { id: 'celebration-of-love', name: 'Celebration of Love', date: '25 November 2026', period: 'Afternoon' },
       { id: 'dj-night', name: 'A Night to Remember', date: '25 November 2026', period: 'Evening' },
       { id: 'grah-shanti', name: 'Grah Shanti', date: '26 November 2026', period: 'Morning' },
-      { id: 'the-wedding', name: 'The Wedding', date: '26 November 2026', period: 'Evening' },
+      { id: 'the-wedding', name: 'Vivah Sanskar', date: '26 November 2026', period: 'Evening' },
     ],
     attendanceOptions: ["Yes, I'll be there!", 'Celebrating with you in spirit'],
   },
@@ -269,7 +269,7 @@ export const weddingConfig: WeddingConfig = {
   },
 
   audio: {
-    enabled: true,
+    enabled: false,
     title: 'Ambient Wedding Sitar & Flute',
     audioUrl: '', // Supported: if blank, synthesizes gentle acoustic ambient harmonium & harp chimes
   },

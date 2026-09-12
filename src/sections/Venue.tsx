@@ -26,10 +26,10 @@ export const Venue: React.FC = () => {
   };
 
   return (
-    <section id="venue" className="relative py-24 sm:py-36 bg-ivory-100 text-charcoal-800 overflow-hidden">
+    <section id="venue" className="relative py-14 sm:py-18 bg-ivory-100 text-charcoal-800 overflow-hidden">
       <div className="relative max-w-6xl mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
           <motion.span
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -9,10 +9,10 @@ export const FamilySection: React.FC = () => {
   const { family } = weddingConfig;
 
   return (
-    <section className="relative py-24 sm:py-32 bg-ivory-100 text-charcoal-800 overflow-hidden">
+    <section id="family" className="relative py-12 sm:py-16 bg-ivory-100 text-charcoal-800 overflow-hidden">
       <div className="relative max-w-5xl mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16 sm:mb-20">
+        <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}

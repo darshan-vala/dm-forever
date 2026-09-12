@@ -16,7 +16,7 @@ export const Countdown: React.FC = () => {
   const { wedding } = weddingConfig;
 
   const calculateTimeLeft = (): TimeLeft => {
-    // Target: 25 November 2026 in India Standard Time (IST = UTC+5:30)
+    // Target: 26 November 2026 in India Standard Time (IST = UTC+5:30)
     const targetDate = new Date(wedding.countdownTarget).getTime();
     const now = new Date().getTime();
     const difference = targetDate - now;
@@ -81,7 +81,7 @@ export const Countdown: React.FC = () => {
         <OrnamentalDivider variant="lotus" color="#DEC9A3" className="my-5" />
 
         <p className="text-xs sm:text-sm tracking-[0.25em] uppercase text-champagne-dark mb-12">
-          {wedding.startDate} • Surat, Gujarat
+          {wedding.endDate} • Surat, Gujarat
         </p>
 
         {/* Countdown Display or Graceful "The celebrations have begun." */}

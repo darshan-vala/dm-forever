@@ -2,7 +2,6 @@ import React from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import { ToastProvider } from './components/ui/Toast';
 import { FloatingNav } from './components/ui/FloatingNav';
-import { FloatingAudio } from './components/ui/FloatingAudio';
 import { Hero } from './sections/Hero';
 import { Countdown } from './sections/Countdown';
 import { Celebrations } from './sections/Celebrations';
@@ -17,9 +16,6 @@ export const App: React.FC = () => {
       <div className="relative min-h-screen bg-ivory-100 text-charcoal-800 font-sans selection:bg-burgundy-600 selection:text-ivory-50 overflow-x-hidden">
         {/* Floating Minimal Luxury Navigation */}
         <FloatingNav />
-
-        {/* Floating Music Control */}
-        <FloatingAudio />
 
         {/* Visual Narrative Progression */}
         <main>

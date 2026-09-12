@@ -8,7 +8,7 @@ export const RsvpSection: React.FC = () => {
   const { rsvp } = weddingConfig;
 
   return (
-    <section id="rsvp" className="relative py-24 sm:py-36 bg-ivory-50 text-charcoal-800 overflow-hidden">
+    <section id="rsvp" className="relative py-12 sm:py-16 bg-ivory-50 text-charcoal-800 overflow-hidden">
       {/* Background radial accent */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-gold-100/40 rounded-full blur-[120px] pointer-events-none" />
 
@@ -52,7 +52,7 @@ export const RsvpSection: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="relative mt-12 bg-ivory-100 rounded-3xl p-10 sm:p-14 border border-gold-300/80 shadow-luxury max-w-lg mx-auto"
+          className="relative mt-8 bg-ivory-100 rounded-3xl p-8 sm:p-10 border border-gold-300/80 shadow-luxury max-w-lg mx-auto"
         >
           {/* Corner Accents */}
           <span className="absolute top-3 left-3 w-3 h-3 border-t border-l border-gold-400" />

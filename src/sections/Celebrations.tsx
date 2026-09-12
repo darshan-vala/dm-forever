@@ -40,7 +40,7 @@ export const Celebrations: React.FC = () => {
   };
 
   return (
-    <section id="celebrations" className="relative py-24 sm:py-36 bg-ivory-100 text-charcoal-800 overflow-hidden">
+    <section id="celebrations" className="relative pt-16 pb-12 sm:pt-20 sm:pb-14 bg-ivory-100 text-charcoal-800 overflow-hidden">
       {/* Subtle background ambient elements */}
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold-400/50 to-transparent" />
       <div className="absolute -left-40 top-1/3 w-80 h-80 rounded-full bg-gold-200/20 blur-3xl pointer-events-none" />
@@ -48,7 +48,7 @@ export const Celebrations: React.FC = () => {
 
       <div className="relative max-w-6xl mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-24">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -89,7 +89,7 @@ export const Celebrations: React.FC = () => {
         {/* ======================================================== */}
         {/* DESKTOP EXPERIENCE: Horizontal Journey & Interactive Tab Selector */}
         {/* ======================================================== */}
-        <div className="hidden lg:block mb-20">
+        <div className="hidden lg:block mb-4">
           {/* Day Progression Indicator Bar */}
           <div className="relative bg-ivory-50 rounded-2xl p-4 border border-gold-300/60 shadow-luxury mb-10">
             <div className="grid grid-cols-5 gap-3">
@@ -440,7 +440,7 @@ const EventCardDetail: React.FC<EventCardDetailProps> = ({ event, isDesktop }) =
               }`}
             >
               <span className="w-1.5 h-1.5 rounded-full bg-gold-500" />
-              Celebration for: {event.person}
+              For {event.person}
             </div>
           )}
         </div>
