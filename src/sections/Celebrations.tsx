@@ -172,7 +172,7 @@ export const Celebrations: React.FC = () => {
         {/* ======================================================== */}
         {/* MOBILE & TABLET: Editorial Continuous Vertical Journey */}
         {/* ======================================================== */}
-        <div className="lg:hidden space-y-12">
+        <div className="lg:hidden space-y-8 sm:space-y-12">
           {/* Day 1 Header */}
           <div className="relative text-center py-6 px-4 bg-burgundy-800 rounded-2xl text-ivory-50 border border-gold-400/30 shadow-luxury">
             <span className="text-xs uppercase tracking-[0.3em] text-gold-300 font-semibold block mb-1">
@@ -199,27 +199,18 @@ export const Celebrations: React.FC = () => {
             </motion.div>
           ))}
 
-          {/* Day 2 Visual Transition Banner */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="relative my-16 p-8 rounded-3xl bg-gradient-to-b from-burgundy-900 via-charcoal-900 to-burgundy-950 text-ivory-50 text-center border-2 border-gold-400/40 shadow-2xl overflow-hidden"
-          >
-            <div className="absolute inset-0 bg-gold-shimmer opacity-20 pointer-events-none" />
-            <MandalaMotif size={64} color="#D4AF37" opacity={0.7} className="mx-auto mb-4" />
-            <span className="text-xs uppercase tracking-[0.35em] text-gold-400 font-semibold block mb-2">
-              The Auspicious Milestone
+          {/* Day 2 Header */}
+          <div className="relative text-center py-6 px-4 bg-burgundy-800 rounded-2xl text-ivory-50 border border-gold-400/30 shadow-luxury">
+            <span className="text-xs uppercase tracking-[0.3em] text-gold-300 font-semibold block mb-1">
+              Day 02
             </span>
-            <h3 className="font-serif text-3xl sm:text-4xl text-ivory-50 tracking-wider mb-2">
-              26 NOVEMBER
+            <h3 className="font-serif text-2xl sm:text-3xl text-ivory-100 tracking-wide">
+              26 November 2026
             </h3>
-            <p className="font-cormorant italic text-xl text-gold-200 font-light">
-              The Day We Begin Forever
+            <p className="text-xs text-champagne-light/80 uppercase tracking-widest mt-1">
+              The Sacred Union &amp; Forever
             </p>
-            <OrnamentalDivider variant="diamond" color="#DEC9A3" className="my-4" />
-          </motion.div>
+          </div>
 
           {/* Day 2 Events */}
           {day2Events.map((event) => (
@@ -340,22 +331,22 @@ const EventCardDetail: React.FC<EventCardDetailProps> = ({ event, isDesktop }) =
         {/* Text & Narrative Content Column */}
         <div className="lg:col-span-6 order-1 lg:order-2 space-y-5">
           {/* Metadata Topline */}
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             <span
-              className={`inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.25em] ${
+              className={`inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.16em] sm:tracking-[0.25em] whitespace-nowrap ${
                 isNightTheme ? 'text-gold-400' : 'text-gold-600'
               }`}
             >
-              <Calendar className="w-3.5 h-3.5" />
+              <Calendar className="w-3.5 h-3.5 shrink-0" />
               {event.date}
             </span>
             <span className={isNightTheme ? 'text-gold-400/40' : 'text-gold-500/50'}>•</span>
             <span
-              className={`inline-flex items-center gap-1.5 text-xs font-medium uppercase tracking-[0.25em] ${
+              className={`inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-medium uppercase tracking-[0.16em] sm:tracking-[0.25em] whitespace-nowrap ${
                 isNightTheme ? 'text-champagne-light' : 'text-charcoal-600'
               }`}
             >
-              <Clock className="w-3.5 h-3.5" />
+              <Clock className="w-3.5 h-3.5 shrink-0" />
               {event.period}
             </span>
           </div>

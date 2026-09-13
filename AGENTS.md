@@ -96,4 +96,4 @@ The user's explicit request takes priority over these general instructions.
 
 When requirements are ambiguous and the ambiguity materially affects implementation, ask one concise clarification question.
 
-Otherwise, make the most reasonable assumption and proceed.
+Otherwise, make the most reasonable assumption and proceed. 
