@@ -41,7 +41,7 @@ export const Hero: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
           className="mb-4 sm:mb-6"
         >
           <MandalaMotif size={72} color="#D4AF37" opacity={0.85} />
@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
         <motion.p
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.9 }}
+          transition={{ delay: 0.1, duration: 0.5 }}
           className="text-xs sm:text-sm uppercase tracking-[0.35em] text-gold-300/90 font-medium mb-3"
         >
           An Auspicious Union
@@ -61,7 +61,7 @@ export const Hero: React.FC = () => {
         <motion.h1
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 1.1 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
           className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-[0.12em] uppercase text-ivory-50 font-medium leading-tight drop-shadow-lg"
         >
           <span>{couple.bride}</span>
@@ -75,7 +75,7 @@ export const Hero: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, scaleX: 0 }}
           animate={{ opacity: 1, scaleX: 1 }}
-          transition={{ delay: 0.7, duration: 0.8 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
           className="w-full"
         >
           <OrnamentalDivider variant="diamond" className="my-5 sm:my-7" />
@@ -85,7 +85,7 @@ export const Hero: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.9, duration: 0.9 }}
+          transition={{ delay: 0.35, duration: 0.5 }}
           className="mb-6"
         >
           <p className="font-serif tracking-[0.25em] text-base sm:text-xl md:text-2xl text-gold-200 uppercase font-light">
@@ -100,7 +100,7 @@ export const Hero: React.FC = () => {
         <motion.p
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.1, duration: 0.9 }}
+          transition={{ delay: 0.45, duration: 0.5 }}
           className="font-cormorant italic text-xl sm:text-2xl md:text-3xl text-champagne max-w-xl mx-auto mb-4 leading-relaxed font-light"
         >
           {couple.tagline}
@@ -110,7 +110,7 @@ export const Hero: React.FC = () => {
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.3, duration: 1.0 }}
+          transition={{ delay: 0.55, duration: 0.5 }}
           className="text-xs sm:text-sm text-ivory-200/80 max-w-md mx-auto leading-relaxed tracking-wide font-light whitespace-pre-line mb-10"
         >
           {couple.heroSubtext}
@@ -120,7 +120,7 @@ export const Hero: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.5, duration: 0.8 }}
+          transition={{ delay: 0.65, duration: 0.5 }}
         >
           <button
             onClick={handleEnter}

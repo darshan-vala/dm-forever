@@ -122,7 +122,7 @@ export const weddingConfig: WeddingConfig = {
       day: '26 Nov',
       dayNumber: 2,
       period: 'Evening',
-      subtitle: 'The Sacred Pheras & Royal Union',
+      subtitle: 'Sacred Pheras & Royal Union',
       description: 'The sacred pheras around the holy fire, uniting two souls and two families in love, cherished vows, and lifelong togetherness.',
       theme: 'royal-climax',
       image: '/marriage.png',

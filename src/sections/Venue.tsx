@@ -93,7 +93,7 @@ export const Venue: React.FC = () => {
               <div className="mt-8 pt-6 border-t border-gold-200/60 space-y-3 text-xs text-charcoal-500 font-light">
                 <div className="flex items-center justify-between">
                   <span className="font-medium text-charcoal-700">Nearest Airport:</span>
-                  <span>Surat International Airport (STV) ~8 km</span>
+                  <span>STV Airport ~8 km</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="font-medium text-charcoal-700">Railway Station:</span>
