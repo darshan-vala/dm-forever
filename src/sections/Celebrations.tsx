@@ -293,8 +293,8 @@ const EventCardDetail: React.FC<EventCardDetailProps> = ({ event, isDesktop }) =
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         {/* Visual Media Column */}
-        <div className="lg:col-span-6 order-2 lg:order-1">
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-gold-300/40 group">
+        <div className="lg:col-span-5 order-2 lg:order-1 flex justify-center">
+          <div className="relative aspect-square w-full max-w-[340px] sm:max-w-[380px] rounded-2xl overflow-hidden shadow-2xl border border-gold-300/40 group">
             <img
               src={event.image}
               alt={event.name}
@@ -329,7 +329,7 @@ const EventCardDetail: React.FC<EventCardDetailProps> = ({ event, isDesktop }) =
         </div>
 
         {/* Text & Narrative Content Column */}
-        <div className="lg:col-span-6 order-1 lg:order-2 space-y-5">
+        <div className="lg:col-span-7 order-1 lg:order-2 space-y-5">
           {/* Metadata Topline */}
           <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             <span

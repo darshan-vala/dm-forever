@@ -72,7 +72,7 @@ export const weddingConfig: WeddingConfig = {
       subtitle: 'Auspicious Rituals & Mandap Blessing',
       description: 'An auspicious beginning as we prepare the mandap for the celebrations that follow.',
       theme: 'sacred-gold',
-      image: 'https://images.unsplash.com/photo-1545232979-fbf68fe9b1af?q=80&w=1000&auto=format&fit=crop',
+      image: '/mandap.png',
       iconName: 'SunMedium',
     },
     {
@@ -85,7 +85,7 @@ export const weddingConfig: WeddingConfig = {
       subtitle: 'Festive Music, Laughter & Joyful Togetherness',
       description: 'An afternoon filled with laughter, colors, music, joy and all the little moments that make celebrations unforgettable.',
       theme: 'vibrant-festive',
-      image: 'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?q=80&w=1000&auto=format&fit=crop',
+      image: '/ChatGPT Image Sep 14, 2026, 11_39_57 AM.png',
       iconName: 'Sparkles',
     },
     {
@@ -98,7 +98,7 @@ export const weddingConfig: WeddingConfig = {
       subtitle: 'Music, Lights & Unfiltered Energy',
       description: 'When the sun goes down, the celebration turns up.',
       theme: 'nocturne-glow',
-      image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1000&auto=format&fit=crop',
+      image: '/dj night.png',
       iconName: 'Music',
     },
     {
@@ -112,7 +112,7 @@ export const weddingConfig: WeddingConfig = {
       subtitle: 'Sacred Peace, Chants & Blessings',
       description: 'An auspicious ceremony filled with blessings, peace and good wishes for the journey ahead.',
       theme: 'serene-blessings',
-      image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1000&auto=format&fit=crop',
+      image: '/grah shanti.png',
       iconName: 'Flame',
     },
     {
@@ -125,7 +125,7 @@ export const weddingConfig: WeddingConfig = {
       subtitle: 'The Sacred Pheras & Royal Union',
       description: 'The sacred pheras around the holy fire, uniting two souls and two families in love, cherished vows, and lifelong togetherness.',
       theme: 'royal-climax',
-      image: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1200&auto=format&fit=crop',
+      image: '/marriage.png',
       iconName: 'HeartHandshake',
     },
   ],
