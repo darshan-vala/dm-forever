@@ -72,7 +72,7 @@ export const weddingConfig: WeddingConfig = {
       subtitle: 'Auspicious Rituals & Mandap Blessing',
       description: 'An auspicious beginning as we prepare the mandap for the celebrations that follow.',
       theme: 'sacred-gold',
-      image: '/mandap.png',
+      image: '/mandap.webp',
       iconName: 'SunMedium',
     },
     {
@@ -85,7 +85,7 @@ export const weddingConfig: WeddingConfig = {
       subtitle: 'Festive Music, Laughter & Joyful Togetherness',
       description: 'An afternoon filled with laughter, colors, music, joy and all the little moments that make celebrations unforgettable.',
       theme: 'vibrant-festive',
-      image: '/ChatGPT Image Sep 14, 2026, 11_39_57 AM.png',
+      image: '/celebration.webp',
       iconName: 'Sparkles',
     },
     {
@@ -98,7 +98,7 @@ export const weddingConfig: WeddingConfig = {
       subtitle: 'Music, Lights & Unfiltered Energy',
       description: 'When the sun goes down, the celebration turns up.',
       theme: 'nocturne-glow',
-      image: '/dj night.png',
+      image: '/dj-night.webp',
       iconName: 'Music',
     },
     {
@@ -112,7 +112,7 @@ export const weddingConfig: WeddingConfig = {
       subtitle: 'Sacred Peace, Chants & Blessings',
       description: 'An auspicious ceremony filled with blessings, peace and good wishes for the journey ahead.',
       theme: 'serene-blessings',
-      image: '/grah shanti.png',
+      image: '/grah-shanti.webp',
       iconName: 'Flame',
     },
     {
@@ -125,7 +125,7 @@ export const weddingConfig: WeddingConfig = {
       subtitle: 'Sacred Pheras & Royal Union',
       description: 'The sacred pheras around the holy fire, uniting two souls and two families in love, cherished vows, and lifelong togetherness.',
       theme: 'royal-climax',
-      image: '/marriage.png',
+      image: '/marriage.webp',
       iconName: 'HeartHandshake',
     },
   ],

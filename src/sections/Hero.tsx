@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
       {/* Background Image with Cinematic Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/main-cover.jpg"
+          src="/main-cover.webp"
           alt="Mansi & Darshan Wedding Celebration"
           className="w-full h-full object-cover object-center scale-105 filter brightness-[0.7] contrast-[1.05]"
           fetchPriority="high"
