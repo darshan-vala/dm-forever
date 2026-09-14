@@ -17,7 +17,7 @@ export const FamilySection: React.FC = () => {
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.4 }}
             className="flex justify-center mb-3"
           >
             <MandalaMotif size={40} color="#B89758" opacity={0.8} />
@@ -27,7 +27,7 @@ export const FamilySection: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
             className="font-serif text-3xl sm:text-5xl tracking-wide text-burgundy-800 font-medium"
           >
             {family.heading}
@@ -39,7 +39,7 @@ export const FamilySection: React.FC = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="text-sm text-charcoal-600 font-light leading-relaxed max-w-lg mx-auto"
           >
             {family.subheading}
@@ -53,7 +53,7 @@ export const FamilySection: React.FC = () => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.5 }}
             className="relative bg-ivory-50 rounded-3xl p-8 sm:p-10 border border-gold-300/60 shadow-luxury text-center flex flex-col items-center justify-between"
           >
             <span className="absolute top-3 left-3 w-3 h-3 border-t border-l border-gold-400" />
@@ -93,7 +93,7 @@ export const FamilySection: React.FC = () => {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.5 }}
             className="relative bg-ivory-50 rounded-3xl p-8 sm:p-10 border border-gold-300/60 shadow-luxury text-center flex flex-col items-center justify-between"
           >
             <span className="absolute top-3 left-3 w-3 h-3 border-t border-l border-gold-400" />

@@ -96,8 +96,6 @@ export const PetalParticles: React.FC<{ className?: string }> = ({ className = '
           ctx.beginPath();
           ctx.arc(0, 0, p.radiusX * 0.5, 0, Math.PI * 2);
           ctx.fillStyle = `rgba(212, 175, 55, ${p.opacity * 0.8})`;
-          ctx.shadowBlur = 4;
-          ctx.shadowColor = 'rgba(212, 175, 55, 0.4)';
           ctx.fill();
         }
 

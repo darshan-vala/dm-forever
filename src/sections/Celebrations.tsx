@@ -43,8 +43,8 @@ export const Celebrations: React.FC = () => {
     <section id="celebrations" className="relative pt-16 pb-12 sm:pt-20 sm:pb-14 bg-ivory-100 text-charcoal-800 overflow-hidden">
       {/* Subtle background ambient elements */}
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold-400/50 to-transparent" />
-      <div className="absolute -left-40 top-1/3 w-80 h-80 rounded-full bg-gold-200/20 blur-3xl pointer-events-none" />
-      <div className="absolute -right-40 bottom-1/3 w-80 h-80 rounded-full bg-blush/30 blur-3xl pointer-events-none" />
+      <div className="absolute -left-40 top-1/3 w-80 h-80 rounded-full bg-gold-200/10 pointer-events-none" />
+      <div className="absolute -right-40 bottom-1/3 w-80 h-80 rounded-full bg-blush/15 pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto px-6">
         {/* Section Header */}

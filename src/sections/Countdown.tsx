@@ -54,7 +54,7 @@ export const Countdown: React.FC = () => {
     <section id="countdown" className="relative py-20 sm:py-28 bg-burgundy-900 text-ivory-50 overflow-hidden">
       {/* Cinematic subtle background illumination */}
       <div className="absolute inset-0 bg-radial-vignette opacity-80 pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-burgundy-700/30 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-gradient-radial from-burgundy-700/20 to-transparent pointer-events-none" />
 
       <div className="relative max-w-4xl mx-auto px-6 text-center">
         <motion.div

@@ -6,6 +6,7 @@
   html {
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
+    touch-action: pan-y;
   }
 
   body {
@@ -13,6 +14,15 @@
     color: #1F2124;
     font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
     text-rendering: optimizeLegibility;
+    /* Promote body to its own compositing layer */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Skip rendering off-screen sections on mobile — massive scroll perf win */
+  main > section,
+  main > div {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 600px;
   }
 
   /* Custom Luxury Scrollbar */
