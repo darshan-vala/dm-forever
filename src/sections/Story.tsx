@@ -21,7 +21,7 @@ export const Story: React.FC = () => {
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.2 }}
             className="text-xs uppercase tracking-[0.3em] text-gold-600 font-semibold block mb-2"
           >
             A Chapter Written in Love
@@ -31,7 +31,7 @@ export const Story: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.1 }}
+            transition={{ duration: 0.2, delay: 0.02 }}
             className="font-serif text-3xl sm:text-5xl tracking-wide text-burgundy-800 font-medium"
           >
             {story.heading}
@@ -44,7 +44,7 @@ export const Story: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.2, delay: 0.04 }}
             className="mt-6 p-6 sm:p-8 bg-ivory-100/80 rounded-2xl border border-gold-300/40 shadow-luxury"
           >
             <p className="font-cormorant italic text-xl sm:text-2xl text-charcoal-800 leading-relaxed font-normal">
@@ -71,15 +71,15 @@ export const Story: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: idx * 0.15 }}
-              className="group relative bg-ivory-100 rounded-2xl overflow-hidden border border-gold-300/40 hover:border-gold-400/80 transition-all duration-300 hover:shadow-luxury-lg flex flex-col"
+              transition={{ duration: 0.2, delay: idx * 0.03 }}
+              className="group relative bg-ivory-100 rounded-2xl overflow-hidden border border-gold-300/40 hover:border-gold-400/80 transition-all duration-200 hover:shadow-luxury-lg flex flex-col"
             >
               {chapter.image && (
                 <div className="relative aspect-[4/3] overflow-hidden bg-champagne-light">
                   <img
                     src={chapter.image}
                     alt={chapter.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-95"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 filter brightness-95"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/60 via-transparent to-transparent" />

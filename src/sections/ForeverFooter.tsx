@@ -33,7 +33,7 @@ export const ForeverFooter: React.FC = () => {
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.2 }}
           className="font-serif text-sm sm:text-base md:text-lg uppercase tracking-[0.35em] text-gold-300/90 font-light mb-4"
         >
           AND SO, OUR FOREVER BEGINS.
@@ -44,7 +44,7 @@ export const ForeverFooter: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.1 }}
+          transition={{ duration: 0.2, delay: 0.02 }}
           className="font-serif text-3xl sm:text-5xl md:text-6xl tracking-[0.15em] uppercase text-ivory-50 font-medium my-2"
         >
           <span>{couple.bride}</span>
@@ -59,7 +59,7 @@ export const ForeverFooter: React.FC = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 0.2, delay: 0.04 }}
           className="font-serif text-sm sm:text-lg tracking-[0.3em] uppercase text-gold-200 mt-2 font-light"
         >
           {wedding.displayDates}
@@ -70,7 +70,7 @@ export const ForeverFooter: React.FC = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.25 }}
+          transition={{ duration: 0.2, delay: 0.05 }}
           className="text-xs uppercase tracking-[0.25em] text-ivory-400 mt-2 font-light"
         >
           {venue.name} • Surat, Gujarat
@@ -81,7 +81,7 @@ export const ForeverFooter: React.FC = () => {
           initial={{ opacity: 0, scaleX: 0 }}
           whileInView={{ opacity: 1, scaleX: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{ duration: 0.2, delay: 0.06 }}
           className="w-full max-w-xs my-8"
         >
           <OrnamentalDivider variant="grand" color="#DEC9A3" />

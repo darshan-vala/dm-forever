@@ -34,7 +34,7 @@ export const Venue: React.FC = () => {
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 0.2 }}
             className="text-xs uppercase tracking-[0.3em] text-gold-600 font-semibold block mb-2"
           >
             The Destination
@@ -44,7 +44,7 @@ export const Venue: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.2, delay: 0.02 }}
             className="font-serif text-3xl sm:text-5xl tracking-wide text-burgundy-800 font-medium"
           >
             Where We Celebrate
@@ -56,7 +56,7 @@ export const Venue: React.FC = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.2, delay: 0.04 }}
             className="text-sm text-charcoal-600 font-light leading-relaxed max-w-md mx-auto"
           >
             Join us in the serene coastal air of Dumas, Surat, as we celebrate love, family, and lifelong promises.
@@ -70,7 +70,7 @@ export const Venue: React.FC = () => {
             initial={{ opacity: 0, x: -25 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.2 }}
             className="lg:col-span-5 bg-ivory-50 rounded-3xl p-8 sm:p-10 border border-gold-300/80 shadow-luxury flex flex-col justify-between"
           >
             <div>
@@ -140,7 +140,7 @@ export const Venue: React.FC = () => {
             initial={{ opacity: 0, x: 25 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.2 }}
             className="lg:col-span-7 bg-charcoal-900 rounded-3xl overflow-hidden border border-gold-300/80 shadow-luxury relative min-h-[380px] flex flex-col"
           >
             {/* Embedded Google Map */}

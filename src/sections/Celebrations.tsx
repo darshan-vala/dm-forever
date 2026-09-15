@@ -53,7 +53,7 @@ export const Celebrations: React.FC = () => {
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 0.2 }}
             className="inline-flex items-center gap-2 mb-3"
           >
             <MandalaMotif size={32} color="#B89758" opacity={0.7} />
@@ -67,7 +67,7 @@ export const Celebrations: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.05 }}
+            transition={{ duration: 0.2, delay: 0.02 }}
             className="font-serif text-3xl sm:text-5xl md:text-6xl tracking-wide text-burgundy-800 font-medium"
           >
             The Wedding Celebrations
@@ -79,7 +79,7 @@ export const Celebrations: React.FC = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.2, delay: 0.04 }}
             className="text-sm sm:text-base text-charcoal-600 font-light max-w-xl mx-auto leading-relaxed"
           >
             Two days of sacred traditions, vibrant festivities, joyous reunions, and the eternal celebration of love.
@@ -160,7 +160,7 @@ export const Celebrations: React.FC = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
-                  transition={{ duration: 0.4 }}
+                  transition={{ duration: 0.2 }}
                 >
                   <EventCardDetail event={event} isDesktop={true} />
                 </motion.div>
@@ -193,7 +193,7 @@ export const Celebrations: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.2 }}
             >
               <EventCardDetail event={event} isDesktop={false} />
             </motion.div>
@@ -219,7 +219,7 @@ export const Celebrations: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.2 }}
             >
               <EventCardDetail event={event} isDesktop={false} />
             </motion.div>

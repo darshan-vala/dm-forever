@@ -21,7 +21,7 @@ export const TravelInfoSection: React.FC = () => {
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.2 }}
             className="text-xs uppercase tracking-[0.3em] text-gold-600 font-semibold block mb-2"
           >
             Guest Assistance
@@ -31,7 +31,7 @@ export const TravelInfoSection: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.1 }}
+            transition={{ duration: 0.2, delay: 0.02 }}
             className="font-serif text-3xl sm:text-5xl tracking-wide text-burgundy-800 font-medium"
           >
             {faq.heading}
@@ -43,7 +43,7 @@ export const TravelInfoSection: React.FC = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.2, delay: 0.04 }}
             className="text-sm text-charcoal-600 font-light leading-relaxed max-w-md mx-auto"
           >
             {faq.subheading}
@@ -60,7 +60,7 @@ export const TravelInfoSection: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.2, delay: index * 0.03 }}
                 className="bg-ivory-100 rounded-2xl border border-gold-300/60 overflow-hidden shadow-luxury transition-colors"
               >
                 <button
@@ -87,7 +87,7 @@ export const TravelInfoSection: React.FC = () => {
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3 }}
+                      transition={{ duration: 0.15 }}
                     >
                       <div className="px-5 pb-6 pt-1 sm:px-6 sm:pb-6 text-charcoal-600 text-sm sm:text-base font-light leading-relaxed border-t border-gold-200/50">
                         <p>{item.answer}</p>

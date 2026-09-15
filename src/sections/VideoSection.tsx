@@ -22,7 +22,7 @@ export const VideoSection: React.FC = () => {
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.2 }}
             className="text-xs uppercase tracking-[0.3em] text-gold-400 font-semibold block mb-2"
           >
             Cinematic Highlights
@@ -32,7 +32,7 @@ export const VideoSection: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.1 }}
+            transition={{ duration: 0.2, delay: 0.02 }}
             className="font-serif text-3xl sm:text-5xl tracking-wide text-ivory-100 font-medium"
           >
             {cinematicVideo.heading}
@@ -44,7 +44,7 @@ export const VideoSection: React.FC = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.2, delay: 0.04 }}
             className="text-sm text-ivory-300 font-light leading-relaxed max-w-md mx-auto"
           >
             {cinematicVideo.subheading}
@@ -56,7 +56,7 @@ export const VideoSection: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.2 }}
           className="relative max-w-4xl mx-auto rounded-3xl overflow-hidden border-2 border-gold-400/40 shadow-2xl group cursor-pointer aspect-video bg-charcoal-900"
           onClick={() => setIsVideoOpen(true)}
         >
@@ -64,7 +64,7 @@ export const VideoSection: React.FC = () => {
           <img
             src={cinematicVideo.posterImage}
             alt="Darshan & Mansi Wedding Film"
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-75 contrast-105"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 filter brightness-75 contrast-105"
             loading="lazy"
           />
 

@@ -30,7 +30,7 @@ export const Gallery: React.FC = () => {
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.2 }}
             className="text-xs uppercase tracking-[0.3em] text-gold-600 font-semibold block mb-2"
           >
             Memories in Motion
@@ -40,7 +40,7 @@ export const Gallery: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.1 }}
+            transition={{ duration: 0.2, delay: 0.02 }}
             className="font-serif text-3xl sm:text-5xl tracking-wide text-burgundy-800 font-medium"
           >
             {gallery.heading}
@@ -52,7 +52,7 @@ export const Gallery: React.FC = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.2, delay: 0.04 }}
             className="text-sm text-charcoal-600 font-light leading-relaxed max-w-md mx-auto"
           >
             A curated collection of quiet smiles, radiant joy, and timeless moments leading to our big day.
@@ -99,19 +99,19 @@ export const Gallery: React.FC = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
-                transition={{ duration: 0.4 }}
+                transition={{ duration: 0.2 }}
                 className="group relative break-inside-avoid rounded-2xl overflow-hidden bg-champagne-light shadow-luxury border border-gold-300/40 cursor-pointer"
                 onClick={() => handleOpenLightbox(idx)}
               >
                 <img
                   src={image.url}
                   alt={image.title}
-                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-95 group-hover:brightness-100"
+                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300 filter brightness-95 group-hover:brightness-100"
                   loading="lazy"
                 />
 
                 {/* Elegant Editorial Hover Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/85 via-charcoal-950/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-6 flex flex-col justify-end text-ivory-50">
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950/85 via-charcoal-950/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-150 p-6 flex flex-col justify-end text-ivory-50">
                   <div className="flex items-center justify-between">
                     <div>
                       <span className="text-[10px] uppercase tracking-[0.25em] text-gold-400 font-semibold block mb-1">

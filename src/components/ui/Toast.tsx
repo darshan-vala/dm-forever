@@ -29,7 +29,7 @@ export const ToastProvider: React.FC<{ children: React.ReactNode }> = ({ childre
               initial={{ opacity: 0, y: 20, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 10, scale: 0.95 }}
-              transition={{ duration: 0.25, ease: 'easeOut' }}
+              transition={{ duration: 0.15, ease: 'easeOut' }}
               className="pointer-events-auto bg-charcoal-900/95 backdrop-blur-md text-ivory-50 px-5 py-4 rounded-xl border border-gold-400/40 shadow-2xl flex items-center gap-3.5"
             >
               {toast.type === 'success' ? (

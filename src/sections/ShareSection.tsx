@@ -61,7 +61,7 @@ export const ShareSection: React.FC = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.2 }}
           className="w-12 h-12 rounded-full bg-gold-500/10 border border-gold-400 text-gold-600 flex items-center justify-center mx-auto mb-4"
         >
           <Heart className="w-5 h-5 fill-gold-500/50" />
@@ -71,7 +71,7 @@ export const ShareSection: React.FC = () => {
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.2 }}
           className="font-serif text-3xl sm:text-4xl text-burgundy-800 font-medium tracking-wide"
         >
           {share.heading}
@@ -83,7 +83,7 @@ export const ShareSection: React.FC = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}
+          transition={{ duration: 0.2, delay: 0.02 }}
           className="text-sm text-charcoal-600 font-light max-w-md mx-auto mb-8 leading-relaxed"
         >
           {share.subheading}
