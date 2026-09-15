@@ -61,7 +61,7 @@ export async function submitRsvp(data: RsvpSubmission): Promise<RsvpResponse> {
   }
 
   // 2. Fallback / Default Mode: Store locally in browser and simulate graceful server latency
-  await new Promise((resolve) => setTimeout(resolve, 800));
+  await new Promise((resolve) => setTimeout(resolve, 150));
 
   try {
     const existing = JSON.parse(localStorage.getItem('dm_wedding_rsvps') || '[]');

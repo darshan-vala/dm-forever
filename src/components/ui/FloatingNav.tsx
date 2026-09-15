@@ -58,10 +58,10 @@ export const FloatingNav: React.FC = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 pointer-events-none px-4 sm:px-6 py-4 sm:py-5 flex justify-center`}
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-200 pointer-events-none px-4 sm:px-6 py-4 sm:py-5 flex justify-center`}
       >
         <div
-          className={`pointer-events-auto flex items-center justify-between gap-6 sm:gap-10 px-5 sm:px-8 py-2.5 sm:py-3 rounded-full transition-all duration-500 ${
+          className={`pointer-events-auto flex items-center justify-between gap-6 sm:gap-10 px-5 sm:px-8 py-2.5 sm:py-3 rounded-full transition-all duration-200 ${
             scrolled
               ? 'bg-ivory-50/90 backdrop-blur-md shadow-luxury-lg border border-gold-300/60 text-charcoal-900'
               : 'bg-charcoal-950/40 backdrop-blur-sm border border-gold-200/20 text-ivory-100'
@@ -137,7 +137,7 @@ export const FloatingNav: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.2 }}
             className="fixed inset-0 z-50 bg-charcoal-950/80 backdrop-blur-xl flex flex-col justify-between p-8"
           >
             <div className="flex items-center justify-between border-b border-gold-400/20 pb-6">
@@ -163,7 +163,7 @@ export const FloatingNav: React.FC = () => {
                   onClick={(e) => handleNavClick(e, item.href)}
                   initial={{ opacity: 0, y: 15 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.05 * idx, duration: 0.3 }}
+                  transition={{ delay: 0.02 * idx, duration: 0.2 }}
                   className="font-serif text-2xl tracking-[0.2em] text-ivory-100 hover:text-gold-400 transition-colors uppercase"
                 >
                   {item.name}

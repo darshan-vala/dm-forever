@@ -33,15 +33,28 @@ export const Countdown: React.FC = () => {
     return { days, hours, minutes, seconds, isComplete: false };
   };
 
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(() => calculateTimeLeft());
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
+    const updateTime = () => {
+      const targetDate = new Date(wedding.countdownTarget).getTime();
+      const now = new Date().getTime();
+      const difference = targetDate - now;
 
+      if (difference <= 0) {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0, isComplete: true });
+      } else {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+        setTimeLeft({ days, hours, minutes, seconds, isComplete: false });
+      }
+    };
+
+    const timer = setInterval(updateTime, 1000);
     return () => clearInterval(timer);
-  }, []);
+  }, [wedding.countdownTarget]);
 
   const timeUnits = [
     { label: 'Days', value: timeLeft.days },
@@ -61,7 +74,7 @@ export const Countdown: React.FC = () => {
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.2 }}
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/10 border border-gold-400/30 text-gold-300 text-xs uppercase tracking-[0.25em] mb-4"
         >
           <Clock className="w-3.5 h-3.5" />
@@ -72,7 +85,7 @@ export const Countdown: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.1 }}
+          transition={{ duration: 0.2, delay: 0.02 }}
           className="font-serif text-3xl sm:text-5xl tracking-wide text-ivory-100 font-medium"
         >
           Counting Down to Forever
@@ -107,8 +120,8 @@ export const Countdown: React.FC = () => {
                 initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: idx * 0.1 }}
-                className="relative bg-burgundy-800/60 backdrop-blur-md border border-gold-400/30 rounded-2xl p-5 sm:p-8 shadow-luxury group hover:border-gold-400/60 hover:bg-burgundy-800/80 transition-all duration-300"
+                transition={{ duration: 0.2, delay: idx * 0.03 }}
+                className="relative bg-burgundy-800/60 backdrop-blur-md border border-gold-400/30 rounded-2xl p-5 sm:p-8 shadow-luxury group hover:border-gold-400/60 hover:bg-burgundy-800/80 transition-all duration-200"
               >
                 {/* Corner accents */}
                 <span className="absolute top-2 left-2 w-2 h-2 border-t border-l border-gold-400/60" />

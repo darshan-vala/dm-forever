@@ -18,7 +18,7 @@ export const RsvpSection: React.FC = () => {
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.2 }}
           className="text-xs uppercase tracking-[0.3em] text-gold-600 font-semibold block mb-2"
         >
           Join the Celebration
@@ -28,7 +28,7 @@ export const RsvpSection: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.1 }}
+          transition={{ duration: 0.2, delay: 0.02 }}
           className="font-serif text-3xl sm:text-5xl tracking-wide text-burgundy-800 font-medium"
         >
           {rsvp.heading}
@@ -40,7 +40,7 @@ export const RsvpSection: React.FC = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 0.2, delay: 0.04 }}
           className="text-sm sm:text-base text-charcoal-600 font-light leading-relaxed max-w-lg mx-auto"
         >
           &ldquo;{rsvp.subheading}&rdquo;
@@ -51,7 +51,7 @@ export const RsvpSection: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{ duration: 0.2, delay: 0.06 }}
           className="relative mt-8 bg-ivory-100 rounded-3xl p-8 sm:p-10 border border-gold-300/80 shadow-luxury max-w-lg mx-auto"
         >
           {/* Corner Accents */}
