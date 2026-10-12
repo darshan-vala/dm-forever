@@ -71,7 +71,7 @@ export const Venue: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.2 }}
-            className="lg:col-span-5 bg-ivory-50 rounded-3xl p-8 sm:p-10 border border-gold-300/80 shadow-luxury flex flex-col justify-between"
+            className="lg:col-span-5 bg-ivory-50 rounded-3xl p-6 sm:p-10 border border-gold-300/80 shadow-luxury flex flex-col justify-between"
           >
             <div>
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold-500/10 text-gold-700 text-xs uppercase tracking-widest font-semibold mb-6 border border-gold-300">
@@ -104,17 +104,18 @@ export const Venue: React.FC = () => {
                   <span>Karimbag, Dumas Road</span>
                 </div>
                 {venue.airbnbUrl && (
-                  <div className="flex items-center justify-between pt-1">
-                    <span className="font-semibold text-charcoal-800">Accommodations:</span>
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="font-medium text-charcoal-700 shrink-0">Accommodations:</span>
                     <a
                       href={venue.airbnbUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold-400/25 hover:bg-gold-400/40 text-burgundy-950 font-bold text-xs border border-gold-500 shadow-xs transition-all"
+                      className="inline-flex items-center gap-1.5 text-burgundy-800 hover:text-burgundy-950 font-medium transition-colors group text-right"
                     >
-                      <Home className="w-3.5 h-3.5 text-gold-700" />
-                      <span className="font-bold underline decoration-gold-600 decoration-1">Airbnb Near Venue</span>
-                      <ExternalLink className="w-3 h-3 text-burgundy-900" />
+                      <span className="underline decoration-gold-400 underline-offset-2 group-hover:decoration-burgundy-800">
+                        Nearby Stays
+                      </span>
+                      <ExternalLink className="w-3.5 h-3.5 text-gold-600 shrink-0 group-hover:translate-x-0.5 transition-transform" />
                     </a>
                   </div>
                 )}
@@ -133,7 +134,7 @@ export const Venue: React.FC = () => {
 
               <button
                 onClick={handleCopyAddress}
-                className="py-3.5 px-4 rounded-full bg-ivory-100 hover:bg-gold-100 text-charcoal-700 text-xs uppercase tracking-[0.18em] font-medium border border-gold-300 transition-all flex items-center justify-center gap-2"
+                className="flex-1 min-w-[130px] py-3.5 px-4 rounded-full bg-ivory-100 hover:bg-gold-100 text-charcoal-700 text-xs uppercase tracking-[0.18em] font-medium border border-gold-300 transition-all flex items-center justify-center gap-2"
               >
                 {copied ? (
                   <>
@@ -153,10 +154,10 @@ export const Venue: React.FC = () => {
                   href={venue.airbnbUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="py-3.5 px-5 rounded-full bg-gold-400 hover:bg-gold-300 text-burgundy-950 text-xs uppercase tracking-[0.2em] font-extrabold border-2 border-gold-500 shadow-gold-glow hover:shadow-lg ring-2 ring-gold-400/50 transition-all flex items-center justify-center gap-2 group"
+                  className="w-full sm:w-auto py-3.5 px-5 rounded-full bg-gold-400 hover:bg-gold-300 text-burgundy-950 text-xs uppercase tracking-[0.18em] font-semibold border border-gold-500/70 shadow-sm hover:shadow-gold-glow transition-all flex items-center justify-center gap-2 group"
                 >
                   <Home className="w-4 h-4 text-burgundy-900 group-hover:scale-110 transition-transform" />
-                  <span className="font-extrabold text-burgundy-950 tracking-[0.2em]">Nearby Stays</span>
+                  <span>Nearby Stays</span>
                 </a>
               )}
             </div>
