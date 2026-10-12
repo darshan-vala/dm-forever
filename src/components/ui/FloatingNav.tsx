@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Heart } from 'lucide-react';
 import { weddingConfig } from '../../config/wedding';
+import { InstagramIcon } from './InstagramIcon';
 
 interface NavItem {
   name: string;
@@ -115,6 +116,22 @@ export const FloatingNav: React.FC = () => {
                 </a>
               );
             })}
+
+            {/* Instagram Updates */}
+            <a
+              href={weddingConfig.social.instagram.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-medium tracking-wide transition-all border ${
+                scrolled
+                  ? 'bg-gold-500/10 hover:bg-gold-500/20 text-burgundy-900 border-gold-300/80 hover:border-gold-400'
+                  : 'bg-ivory-50/10 hover:bg-gold-500/20 text-ivory-100 border-gold-300/30 hover:border-gold-300/60'
+              }`}
+              title="Get latest updates on @mdinmotion_"
+            >
+              <InstagramIcon className="w-3.5 h-3.5 text-gold-500" />
+              <span>@mdinmotion_</span>
+            </a>
           </nav>
 
           {/* Mobile Hamburger Trigger */}
@@ -170,6 +187,20 @@ export const FloatingNav: React.FC = () => {
                 </motion.a>
               ))}
             </nav>
+
+            {/* Mobile Instagram Updates */}
+            <div className="flex justify-center my-4">
+              <a
+                href={weddingConfig.social.instagram.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileOpen(false)}
+                className="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full bg-gold-500/10 hover:bg-gold-500/20 border border-gold-400/40 text-gold-300 text-xs tracking-widest uppercase transition-all"
+              >
+                <InstagramIcon className="w-4 h-4 text-gold-400" />
+                <span>Updates: @mdinmotion_</span>
+              </a>
+            </div>
 
             <div className="text-center pt-6 border-t border-gold-400/20">
               <p className="text-xs uppercase tracking-[0.25em] text-gold-400/80 mb-2">

@@ -122,4 +122,10 @@ export interface WeddingConfig {
     title: string;
     audioUrl?: string;
   };
+  social: {
+    instagram: {
+      handle: string;
+      url: string;
+    };
+  };
 }

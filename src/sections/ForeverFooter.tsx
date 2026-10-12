@@ -3,10 +3,11 @@ import { motion } from 'framer-motion';
 import { weddingConfig } from '../config/wedding';
 import { MandalaMotif } from '../components/ui/MandalaMotif';
 import { OrnamentalDivider } from '../components/ui/OrnamentalBorder';
-import { Heart, ArrowUp } from 'lucide-react';
+import { Heart, ArrowUp, ExternalLink } from 'lucide-react';
+import { InstagramIcon } from '../components/ui/InstagramIcon';
 
 export const ForeverFooter: React.FC = () => {
-  const { couple, wedding, venue } = weddingConfig;
+  const { couple, wedding, venue, social } = weddingConfig;
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -75,6 +76,35 @@ export const ForeverFooter: React.FC = () => {
         >
           {venue.name} • Surat, Gujarat
         </motion.p>
+
+        {/* Latest Updates on Instagram */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.2, delay: 0.055 }}
+          className="mt-8 mb-2"
+        >
+          <a
+            href={social.instagram.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-3.5 px-6 py-3 rounded-full bg-gradient-to-r from-charcoal-900/90 via-burgundy-950/80 to-charcoal-900/90 hover:from-burgundy-900/90 hover:to-charcoal-900 border border-gold-400/40 hover:border-gold-300 shadow-luxury hover:shadow-gold-glow transition-all duration-300"
+          >
+            <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+              <InstagramIcon className="w-4 h-4 text-white" />
+            </div>
+            <div className="text-left">
+              <span className="block text-[10px] uppercase tracking-[0.22em] text-gold-300/90 font-medium">
+                Get latest updates on
+              </span>
+              <span className="font-serif text-sm tracking-wider text-ivory-100 group-hover:text-gold-200 transition-colors font-medium">
+                {social.instagram.handle}
+              </span>
+            </div>
+            <ExternalLink className="w-3.5 h-3.5 text-gold-400/80 group-hover:text-gold-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform ml-1" />
+          </a>
+        </motion.div>
 
         {/* Subtle Animated Ornamental Divider */}
         <motion.div

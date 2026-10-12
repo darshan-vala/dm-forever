@@ -278,4 +278,11 @@ export const weddingConfig: WeddingConfig = {
     title: 'Ambient Wedding Sitar & Flute',
     audioUrl: '', // Supported: if blank, synthesizes gentle acoustic ambient harmonium & harp chimes
   },
+  social: {
+    instagram: {
+      handle: '@mdinmotion_',
+      url: 'https://www.instagram.com/mdinmotion_/',
+    },
+  },
 };
+
