@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { weddingConfig } from '../config/wedding';
 import { OrnamentalDivider } from '../components/ui/OrnamentalBorder';
-import { ChevronDown, Navigation, HelpCircle } from 'lucide-react';
+import { ChevronDown, HelpCircle, ExternalLink } from 'lucide-react';
 
 export const TravelInfoSection: React.FC = () => {
   const { faq } = weddingConfig;
@@ -99,7 +99,7 @@ export const TravelInfoSection: React.FC = () => {
                               rel="noopener noreferrer"
                               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-burgundy-800 text-ivory-50 text-xs uppercase tracking-widest font-medium hover:bg-burgundy-700 transition-colors"
                             >
-                              <Navigation className="w-3.5 h-3.5 text-gold-300" />
+                              <ExternalLink className="w-3.5 h-3.5 text-gold-300" />
                               <span>{item.linkText || 'Open Link'}</span>
                             </a>
                           </div>

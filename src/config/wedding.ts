@@ -28,6 +28,8 @@ export const weddingConfig: WeddingConfig = {
     fullAddress: 'Bai Dayakor Hindu Aarogya Bhavan, Karimbag, Dumas, Surat, Gujarat – 394550',
     googleMapsUrl: 'https://maps.google.com/?q=Bai+Dayakor+Hindu+Aarogya+Bhavan+Karimbag+Dumas+Surat+Gujarat+394550',
     embedMapQuery: 'Bai Dayakor Hindu Aarogya Bhavan, Dumas, Surat, Gujarat 394550',
+    airbnbUrl:
+      'https://www.airbnb.co.in/s/Dumas-Beach--Surat--Gujarat--India/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJfzqmAjNT4DsRQrWL-Sfjhm0&location=Dumas+Beach%2C+Surat%2C+Gujarat%2C+India&checkin=2026-11-25&checkout=2026-11-26&date_picker_type=calendar&adults=2&children=0',
   },
 
   story: {
@@ -220,7 +222,7 @@ export const weddingConfig: WeddingConfig = {
   rsvp: {
     heading: 'Will You Join Us?',
     subheading: 'Your presence will make our celebrations even more special.',
-    googleFormUrl: 'https://forms.google.com/PLACEHOLDER', // Replace with your actual Google Form URL
+    googleFormUrl: 'https://forms.gle/ihamjzosjEKYv9zX9',
     events: [
       { id: 'mandap-muhurt', name: 'Mandap Muhurt', date: '25 November 2026', period: 'Morning' },
       { id: 'celebration-of-love', name: 'Celebration of Love', date: '25 November 2026', period: 'Afternoon' },
@@ -241,13 +243,16 @@ export const weddingConfig: WeddingConfig = {
       },
       {
         question: 'How do I get to the venue?',
-        answer: 'The venue is conveniently located in Dumas, Surat, approximately 8 km from Surat International Airport (STV) and 20 km from Surat Railway Station. Taxis and app-based cabs are readily available.',
+        answer: 'The venue is conveniently located in Dumas, Surat, approximately 8 km from Surat International Airport (STV) and 20 km from Surat Railway / Bus Station. Taxis and app-based cabs are readily available.',
         linkText: 'Open in Google Maps',
         linkUrl: 'https://maps.google.com/?q=Bai+Dayakor+Hindu+Aarogya+Bhavan+Karimbag+Dumas+Surat+Gujarat+394550',
       },
       {
         question: 'Where should I stay?',
-        answer: 'Accommodation recommendations and partner stay details will be updated here shortly.',
+        answer: 'You can explore convenient homestays and accommodations around Dumas Beach, Surat for the wedding dates (25–26 November 2026).',
+        linkText: 'Explore Stays on Airbnb',
+        linkUrl:
+          'https://www.airbnb.co.in/s/Dumas-Beach--Surat--Gujarat--India/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJfzqmAjNT4DsRQrWL-Sfjhm0&location=Dumas+Beach%2C+Surat%2C+Gujarat%2C+India&checkin=2026-11-25&checkout=2026-11-26&date_picker_type=calendar&adults=2&children=0',
       },
       {
         question: 'Is parking available?',

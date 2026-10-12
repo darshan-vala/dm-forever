@@ -25,6 +25,7 @@ export interface WeddingVenue {
   fullAddress: string;
   googleMapsUrl: string;
   embedMapQuery: string;
+  airbnbUrl?: string;
 }
 
 export interface WeddingEvent {

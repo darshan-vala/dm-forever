@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { weddingConfig } from '../config/wedding';
 import { OrnamentalDivider } from '../components/ui/OrnamentalBorder';
-import { MapPin, Navigation, Copy, Check, ExternalLink, Compass } from 'lucide-react';
+import { MapPin, Navigation, Copy, Check, ExternalLink, Compass, Home } from 'lucide-react';
 import { useToast } from '../components/ui/Toast';
 
 export const Venue: React.FC = () => {
@@ -96,29 +96,44 @@ export const Venue: React.FC = () => {
                   <span>STV Airport ~8 km</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="font-medium text-charcoal-700">Railway Station:</span>
+                  <span className="font-medium text-charcoal-700">Railway/Bus Station:</span>
                   <span>Surat Junction ~20 km</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="font-medium text-charcoal-700">Landmark:</span>
                   <span>Karimbag, Dumas Road</span>
                 </div>
+                {venue.airbnbUrl && (
+                  <div className="flex items-center justify-between pt-1">
+                    <span className="font-semibold text-charcoal-800">Accommodations:</span>
+                    <a
+                      href={venue.airbnbUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold-400/25 hover:bg-gold-400/40 text-burgundy-950 font-bold text-xs border border-gold-500 shadow-xs transition-all"
+                    >
+                      <Home className="w-3.5 h-3.5 text-gold-700" />
+                      <span className="font-bold underline decoration-gold-600 decoration-1">Airbnb Near Venue</span>
+                      <ExternalLink className="w-3 h-3 text-burgundy-900" />
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
 
             {/* Action Buttons */}
-            <div className="mt-8 pt-6 border-t border-gold-200/60 flex flex-col sm:flex-row gap-3">
+            <div className="mt-8 pt-6 border-t border-gold-200/60 flex flex-col sm:flex-row flex-wrap gap-3">
               <button
                 onClick={handleGetDirections}
-                className="flex-1 py-3.5 px-5 rounded-full bg-burgundy-800 hover:bg-burgundy-700 text-ivory-50 text-xs uppercase tracking-[0.2em] font-medium border border-gold-400/40 shadow-sm hover:shadow-gold-glow transition-all flex items-center justify-center gap-2"
+                className="flex-1 min-w-[130px] py-3.5 px-4 rounded-full bg-burgundy-800 hover:bg-burgundy-700 text-ivory-50 text-xs uppercase tracking-[0.18em] font-medium border border-gold-400/40 shadow-sm hover:shadow-gold-glow transition-all flex items-center justify-center gap-2"
               >
                 <Navigation className="w-4 h-4 text-gold-300" />
-                <span>Get Directions</span>
+                <span>Directions</span>
               </button>
 
               <button
                 onClick={handleCopyAddress}
-                className="py-3.5 px-5 rounded-full bg-ivory-100 hover:bg-gold-100 text-charcoal-700 text-xs uppercase tracking-[0.2em] font-medium border border-gold-300 transition-all flex items-center justify-center gap-2"
+                className="py-3.5 px-4 rounded-full bg-ivory-100 hover:bg-gold-100 text-charcoal-700 text-xs uppercase tracking-[0.18em] font-medium border border-gold-300 transition-all flex items-center justify-center gap-2"
               >
                 {copied ? (
                   <>
@@ -132,6 +147,18 @@ export const Venue: React.FC = () => {
                   </>
                 )}
               </button>
+
+              {venue.airbnbUrl && (
+                <a
+                  href={venue.airbnbUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="py-3.5 px-5 rounded-full bg-gold-400 hover:bg-gold-300 text-burgundy-950 text-xs uppercase tracking-[0.2em] font-extrabold border-2 border-gold-500 shadow-gold-glow hover:shadow-lg ring-2 ring-gold-400/50 transition-all flex items-center justify-center gap-2 group"
+                >
+                  <Home className="w-4 h-4 text-burgundy-900 group-hover:scale-110 transition-transform" />
+                  <span className="font-extrabold text-burgundy-950 tracking-[0.2em]">Nearby Stays</span>
+                </a>
+              )}
             </div>
           </motion.div>
 
