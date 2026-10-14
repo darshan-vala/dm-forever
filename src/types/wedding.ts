@@ -35,6 +35,7 @@ export interface WeddingEvent {
   day: string; // "25 Nov" or "26 Nov"
   dayNumber: 1 | 2;
   period: 'Morning' | 'Afternoon' | 'Evening';
+  time?: string;
   person?: string; // "Darshan" | "Mansi"
   subtitle?: string;
   description: string;
@@ -102,6 +103,7 @@ export interface WeddingConfig {
       name: string;
       date: string;
       period: string;
+      time?: string;
     }>;
     attendanceOptions: string[];
   };

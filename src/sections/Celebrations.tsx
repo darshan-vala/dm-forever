@@ -107,11 +107,11 @@ export const Celebrations: React.FC = () => {
                   >
                     <div className="flex items-center justify-between mb-2">
                       <span
-                        className={`text-[10px] uppercase tracking-widest font-semibold ${
+                        className={`text-[10px] uppercase tracking-wider font-semibold ${
                           isActive ? 'text-gold-300' : 'text-gold-600'
                         }`}
                       >
-                        {event.day} • {event.period}
+                        {event.time ? `${event.day} • ${event.time}` : `${event.day} • ${event.period}`}
                       </span>
                       <span className={isActive ? 'text-gold-300' : 'text-charcoal-400'}>
                         {getEventIcon(event.iconName, 'w-4 h-4')}
@@ -311,8 +311,8 @@ const EventCardDetail: React.FC<EventCardDetailProps> = ({ event, isDesktop }) =
 
             {/* Floating Tag */}
             <div className="absolute top-4 left-4">
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-charcoal-950/80 backdrop-blur-md text-gold-300 text-[11px] font-medium tracking-widest uppercase border border-gold-400/40">
-                {event.day} • {event.period}
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-charcoal-950/80 backdrop-blur-md text-gold-300 text-[11px] font-medium tracking-wider uppercase border border-gold-400/40">
+                {event.time ? `${event.day} • ${event.time}` : `${event.day} • ${event.period}`}
               </span>
             </div>
 
@@ -347,8 +347,20 @@ const EventCardDetail: React.FC<EventCardDetailProps> = ({ event, isDesktop }) =
               }`}
             >
               <Clock className="w-3.5 h-3.5 shrink-0" />
-              {event.period}
+              {event.time || event.period}
             </span>
+            {event.time && (
+              <>
+                <span className={isNightTheme ? 'text-gold-400/40' : 'text-gold-500/50'}>•</span>
+                <span
+                  className={`text-[11px] sm:text-xs font-light uppercase tracking-[0.16em] sm:tracking-[0.25em] whitespace-nowrap ${
+                    isNightTheme ? 'text-gold-400/80' : 'text-charcoal-500'
+                  }`}
+                >
+                  {event.period}
+                </span>
+              </>
+            )}
           </div>
 
           {/* Event Title */}
